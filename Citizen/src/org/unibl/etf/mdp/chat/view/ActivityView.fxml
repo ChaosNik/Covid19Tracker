@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="ap" fx:controller="org.unibl.etf.mdp.chat.view.ActivityViewController" minHeight="300.0" minWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TableView fx:id="table" layoutX="5.0" layoutY="5.0" prefHeight="260.0" prefWidth="390.0" />
+      <Button fx:id="btnCancel" layoutX="130.0" layoutY="270.0" prefHeight="20.0" prefWidth="100.0" mnemonicParsing="false" onAction="#goBack" text="Nazad" />
+   </children>
+</AnchorPane>

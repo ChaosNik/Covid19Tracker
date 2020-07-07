@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+
+<AnchorPane fx:id="anchorPane" fx:controller="org.unibl.etf.mdp.chat.view.MessageViewController" minHeight="570.0" minWidth="880.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+   	  <MenuBar fx:id="menuBar" layoutX="0" layoutY="0">
+   	  	<Menu mnemonicParsing="false" text="File">
+   	  		<MenuItem mnemonicParsing="false" onAction="#onMap" text="Mapa lokacija"/>
+	   	  	<MenuItem mnemonicParsing="false" onAction="#onUsage" text="Aktivnost"/>
+	        <MenuItem mnemonicParsing="false" onAction="#onChangePassword" text="Zamjena lozinke"/>
+	        <MenuItem mnemonicParsing="false" onAction="#onUnregister" text="Odjava iz registra"/>
+	        <MenuItem mnemonicParsing="false" onAction="#onExit" text="Izlaz"/>
+        </Menu>
+   	  </MenuBar>
+      <Label fx:id="txtAdminMessage" layoutX="50.0" layoutY="30.0" prefHeight="20.0" prefWidth="800.0" />
+      <Button fx:id="btnRiskMap" layoutX="5.0" layoutY="30.0" mnemonicParsing="false" onAction="#onRiskMap" prefHeight="20.0" prefWidth="40.0" text="Risk" />
+      <!-- ListView fx:id="listUsers" layoutX="5" layoutY="60.0" prefHeight="500.0" prefWidth="240" /-->
+      <ListView fx:id="listMessages" layoutX="0.0" layoutY="60.0" prefHeight="450.0" prefWidth="280.0" />
+      <GridPane fx:id="gridMap" layoutX="290.0" layoutY="60.0" prefHeight="450.0" prefWidth="450.0" />
+	  <!-- ListView fx:id="listFiles" layoutX="600.0" layoutY="60.0" prefHeight="451.0" prefWidth="245.0" /-->
+      <TextArea fx:id="txtMessage" layoutX="0.0" layoutY="512.0" prefHeight="48.0" prefWidth="205.0" />
+      <Button fx:id="btnSend" layoutX="205.0" layoutY="512.0" mnemonicParsing="false" onAction="#onSend" prefHeight="48.0" prefWidth="70.0" text="Pošalji" />
+      <TextArea fx:id="txtX" layoutX="290.0" layoutY="512.0" prefHeight="48.0" prefWidth="100.0" />
+      <TextArea fx:id="txtY" layoutX="390.0" layoutY="512.0" prefHeight="48.0" prefWidth="100.0" />
+      <Button fx:id="btnLocate" layoutX="490.0" layoutY="512.0" mnemonicParsing="false" onAction="#onLocate" prefHeight="48.0" prefWidth="70.0" text="Lociraj" />
+      <!-- Button fx:id="btnBroadcast" layoutX="520.0" layoutY="512.0" mnemonicParsing="false" onAction="#onBroadcast" prefHeight="48.0" prefWidth="70.0" text="Objavi" /-->
+      <Button fx:id="btnSendFile1" layoutX="750.0" layoutY="60.0" mnemonicParsing="false" onAction="#onSendFile1" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 1" />
+      <Button fx:id="btnSendFile2" layoutX="750.0" layoutY="110.0" mnemonicParsing="false" onAction="#onSendFile2" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 2" />
+      <Button fx:id="btnSendFile3" layoutX="750.0" layoutY="160.0" mnemonicParsing="false" onAction="#onSendFile3" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 3" />
+      <Button fx:id="btnSendFile4" layoutX="750.0" layoutY="210.0" mnemonicParsing="false" onAction="#onSendFile4" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 4" />
+      <Button fx:id="btnSendFile5" layoutX="750.0" layoutY="260.0" mnemonicParsing="false" onAction="#onSendFile5" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 5" />
+      <Button fx:id="btnSendFile6" layoutX="750.0" layoutY="310.0" mnemonicParsing="false" onAction="#onSendFile6" prefHeight="48.0" prefWidth="120.0" text="Pošalji fajl 6" />
+      <!-- Button fx:id="btnDownload" layoutX="725.0" layoutY="512.0" mnemonicParsing="false" onAction="#onDownload" prefHeight="48.0" prefWidth="120.0" text="Preuzmi fajl" /-->
+   </children>
+</AnchorPane>

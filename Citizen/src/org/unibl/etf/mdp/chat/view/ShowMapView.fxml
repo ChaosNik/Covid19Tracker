@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="anchorPane" fx:controller="org.unibl.etf.mdp.chat.view.ShowMapViewController" minHeight="550.0" minWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+		<Button fx:id="btnCancel" layoutX="220.0" layoutY="500.0" mnemonicParsing="false" onAction="#cancel" text="Nazad" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="120" minWidth="260" prefHeight="95" prefWidth="260" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.mdp.chat.view.LoginViewController">
+  <children>
+	<Label layoutX="5" layoutY="5" text="       Lozinka" />
+	<PasswordField fx:id="txtPassword" layoutX="100" layoutY="5" />
+	<Button fx:id="btnLogin" layoutX="55" layoutY="45" prefWidth="70" mnemonicParsing="false" onAction="#login" text="Prijavi se" />
+	<Button fx:id="btnExit" layoutX="130" layoutY="45" prefWidth="70" mnemonicParsing="false" onAction="#onExit" text="Izađi" />
+  </children>
+</AnchorPane>
