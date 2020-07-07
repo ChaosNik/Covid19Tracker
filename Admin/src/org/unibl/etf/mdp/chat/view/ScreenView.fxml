@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.mdp.chat.view.ScreenController">
+   <children>
+      <ImageView fx:id="imgScreen" fitHeight="600.0" fitWidth="750.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+   	  <Button fx:id="btnCancel" layoutX="350.0" layoutY="600.0" prefHeight="20.0" prefWidth="100.0" mnemonicParsing="false" onAction="#goBack" text="Nazad" />
+   </children>
+</AnchorPane>

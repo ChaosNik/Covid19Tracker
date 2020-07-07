@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="anchorPane" fx:controller="org.unibl.etf.mdp.chat.view.CitizensViewController" minHeight="260.0" minWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+   	  <MenuBar fx:id="menuBar" layoutX="0" layoutY="0">
+   	  	<Menu mnemonicParsing="false" text="File">
+   	  		<MenuItem mnemonicParsing="false" onAction="#onExit" text="Izlaz"/>
+        </Menu>
+   	  </MenuBar>
+      <Label fx:id="txtAdminMessage" layoutX="0.0" layoutY="30.0" prefHeight="20.0" prefWidth="850.0" />
+      <ListView fx:id="listUsers" layoutX="0.0" layoutY="60.0" prefHeight="450.0" prefWidth="280.0" />
+      <AnchorPane fx:id="gridMap" layoutX="290.0" layoutY="60.0" prefHeight="450.0" prefWidth="450.0" />
+      <ListView fx:id="listPotentialyInfected" layoutX="740.0" layoutY="60.0" prefHeight="450.0" prefWidth="270.0" />
+      <TextArea fx:id="txtSearch" layoutX="0.0" layoutY="512.0" prefHeight="48.0" prefWidth="205.0" />
+      <Button fx:id="btnBlock" layoutX="205.0" layoutY="512.0" mnemonicParsing="false" onAction="#onBlock" prefHeight="48.0" prefWidth="70.0" text="Blokiraj" />
+      <Button fx:id="btnNotInfected" layoutX="290.0" layoutY="512.0" mnemonicParsing="false" onAction="#onNotInfected" prefHeight="48.0" prefWidth="100.0" text="Negativan" />
+      <Button fx:id="btnPotentialyInfected" layoutX="390.0" layoutY="512.0" mnemonicParsing="false" onAction="#onPotentialyInfected" prefHeight="48.0" prefWidth="100.0" text="Potencijalan" />
+      <Button fx:id="btnInfected" layoutX="490.0" layoutY="512.0" mnemonicParsing="false" onAction="#onInfected" prefHeight="48.0" prefWidth="100.0" text="Pozitivan" />
+   </children>
+</AnchorPane>
